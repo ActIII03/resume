@@ -1,0 +1,211 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Armant Touche} \\ \vspace{1pt}
+    \small \href{mailto:a.touche03@gmail.com}{\underline{Email: a.touche03@gmail.com}} $|$ 
+    \href{https://touche-hub.com/}{\underline{touche-hub.com/}} $|$
+    \href{https://github.com/ActIII}{\underline{github.com/ActIII03}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Portland State University}{Portland, OR}
+      {B.S. in Computer Science; Cumulative GPA 3.71}{Dec. 2019 -- March 2023 (Expected)}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Computer Science Tutor}{September 2021 -- Present}
+      {Portland State University}{Portland, OR}
+      \resumeItemListStart
+        \resumeItem{Worked closely with multiple Computer Science Undergraduate students on subjects such as Introduction to Programming, Data Structures, Systems Programming, Programmings Systems, and Discrete Structures through Socratic questioning which provided them with thoughtful dialogue.}
+        \resumeItem{Analyzed and debugged code written from an array of individuals while also providing meaningful guidance to an appropriate solution.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Peer Mentor}{June 2021 -- September 2021}
+      {Transportation Research Education Center}{Portland, OR}
+      \resumeItemListStart
+        \resumeItem{Assisted program directors in facilitating a summer program for high-school aged students which aided in promoting a sense of community and provided guidance to 23 students in navigating the intersection of Transportation and STEM.}
+        \resumeItem{Helped processed over 110 videos for the '21 World Symposium on Transport and Land Use Research using FOSS tools like ffpmeg, GNU/Linux Core utilities, and OpenShot application.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Business Data Analyst Intern}{November 2019 -- March 2020}
+      {C-Tran}{Vancouver, WA}
+      \resumeItemListStart
+        \resumeItem{Improved the data structure of each data set within our data warehouse by data-type checking and error-checking the range of values. Documented the design before process-mapping the relationship of each incoming data-set for statistical analysis, which enforced better data governance.}
+        \resumeItem{Transformed data sets into a consumable visual-models through Microsoft’s application Power BI. The created KPI dashboards were viewed throughout the agency via the intranet application Sharepoint, which aided in making better business decisions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Technical Support Intern}{May 2019 -- November 2019}
+      {Free Geek}{Portland, OR}
+      \resumeItemListStart
+        \resumeItem{Provided help-desk support to local non-profit organizations in the community and individual consumers on warranty equipment. Primarily consisted of workstations and laptops purchased through Free Geek’s re-purposed store.}
+        \resumeItem{Troubleshooted and repaired hardware and software on workstations and laptops mainly involving Linux tools. Also provided short tutorials to customers that were aimed at guiding customers to the appropriate solution for their problem.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{GPU-Crawler} $|$ \emph{Python, boto4, json, scrapy, Docker, docker-compose, rpi3, cron daemon}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a web crawler application that was tasked every 2-hrs to scrape an e-commerce website for RTX series GPU's and output in-stock GPU's data into a json then SMS via boto3 API (AWS SNS).}
+            \resumeItem{The application's execution was handled via cron daemon on my Linux desktop client when in use.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Portfolio Website} $|$ \emph{Ruby-on-Rails, HTML5, Sass, Docker, docker-compose, Git}}{}
+          \resumeItemListStart
+            \resumeItem{Took an off-the-shelf boilerplate from Jekyll and utilized the website template in deploying my portfolio website on Github Page.}
+            \resumeItem{My website has a blog in the beginning stages that based around my interests in Computer Science, Software Engineering, and Life.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills, Community Services, \& Organizations}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, SQL (Postgres), HTML5/CSS3, CISC} \\
+     \textbf{Developer Tools}{: Git, Docker, docker-compose, VS Code, GNU Make, GNU Coreutils, bash} \\
+     \textbf{Community Services \& Organizations}{: 144 hrs volunteered at Free Geek, We in Computer Science (WiCS) }
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
